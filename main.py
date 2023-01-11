@@ -23,6 +23,7 @@ def encrypt(text, shift):
     #creates a list with the index numbers of each letter in the encrypted/shifted message according to the alphabet list    
   for character in mess_list_indexes:
     if type(character) == int:
+      #number_shift = (character + shift) % 26;
       number_shift = character + shift
       if number_shift <= 25:
         encry_list_indexes.append(number_shift)
